@@ -29,6 +29,6 @@ Route::get('about', function() {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+Route::group(['middleware' => ['web']], function () use ($router) {
+    $router->resource('about', 'PagesController');
 });

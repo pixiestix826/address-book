@@ -173,8 +173,8 @@ return [
     */
 
     'aliases' => [
-        // 'Form'      => Collective\Html\Facade\Form::class,
-        // 'Html'      => Collective\Html\Facade\Html::class,
+        'Form'      => Collective\Html\Facade\Form::class,
+        'Html'      => Collective\Html\Facade\Html::class,
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
         'Auth'      => Illuminate\Support\Facades\Auth::class,
@@ -187,10 +187,10 @@ return [
         'Eloquent'  => Illuminate\Database\Eloquent\Model::class,
         'Event'     => Illuminate\Support\Facades\Event::class,
         'File'      => Illuminate\Support\Facades\File::class,
-        'Form'      => Illuminate\Html\Facades\Form::class,
+        // 'Form'      => Illuminate\Html\Facades\Form::class,
         'Gate'      => Illuminate\Support\Facades\Gate::class,
         'Hash'      => Illuminate\Support\Facades\Hash::class,
-        'Html'      => Illuminate\Html\Facades\Html::class,
+        // 'Html'      => Illuminate\Html\Facades\Html::class,
         'Lang'      => Illuminate\Support\Facades\Lang::class,
         'Log'       => Illuminate\Support\Facades\Log::class,
         'Mail'      => Illuminate\Support\Facades\Mail::class,
