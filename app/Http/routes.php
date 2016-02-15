@@ -19,6 +19,7 @@ Route::get('home', function() {
 });
 
 Route::get('/', 'WelcomeController@index');
+
 Route::controller('contacts', 'ContactsController');
 
 /*
@@ -34,4 +35,7 @@ Route::controller('contacts', 'ContactsController');
 
 Route::group(['middleware' => ['web']], function () use ($router) {
     $router->resource('pages.home', 'PagesController');
+});
+Route::group(['middleware' => ['web']], function () use ($router) {
+    $router->resource('contacts.index', 'ContactsController');
 });
