@@ -2,6 +2,7 @@
 @section('content')
 
 
+
 <h1>Create A New Contact</h1>
 
 {!! Form::open([

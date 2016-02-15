@@ -3,7 +3,7 @@
 
 <h1>Your Contacts</h1>
 
-@foreach($contact as $contact)
+@foreach($contacts as $contact)
     <li>
         <span>{{ $contact->name }}</span>
         <span>{{ $contact->address }}</span>
