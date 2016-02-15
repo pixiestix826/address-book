@@ -24,6 +24,6 @@
 {!! Form::submit('Create New Contact', ['class' => 'button']) !!}
 {!! Form::close() !!}
 
-<a href="{{ route('contacts.index') }}" class="button">Back To Address Book</a>
+<a href="{{ route('contacts.index') }}" class="button">Return To Address Book</a>
 
 @endsection
