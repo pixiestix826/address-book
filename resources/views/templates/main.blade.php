@@ -9,7 +9,7 @@
     <body>
 
         <div class="content">
-            @@yield('content')
+            @yield('content')
         </div>
 
     </body>
