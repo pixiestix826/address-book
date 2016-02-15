@@ -47,3 +47,15 @@ Route::group(['middleware' => ['web']], function () use ($router) {
 Route::group(['middleware' => ['web']], function () use ($router) {
     $router->resource('contacts.index', 'ContactsController');
 });
+Route::group(['middleware' => ['web']], function () use ($router) {
+    $router->resource('contacts.create', 'ContactsController');
+});
+Route::group(['middleware' => ['web']], function () use ($router) {
+    $router->resource('contacts.edit', 'ContactsController');
+});
+Route::group(['middleware' => ['web']], function () use ($router) {
+    $router->resource('contacts.update', 'ContactsController');
+});
+Route::group(['middleware' => ['web']], function () use ($router) {
+    $router->resource('templates.main', 'ContactsController');
+});

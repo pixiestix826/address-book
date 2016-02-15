@@ -1,4 +1,4 @@
-@extends('template.main')
+@extends('templates.main')
 @section('content')
 
 <h1>Your Contacts</h1>
