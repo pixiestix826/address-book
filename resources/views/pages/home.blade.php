@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>About</title>
+        <title>Address Book</title>
     </head>
     <body>
 
-    <h1>About Me</h1>
+    <h1>Address Book</h1>
 
     <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

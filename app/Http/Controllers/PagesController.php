@@ -9,10 +9,10 @@ use App\Http\Controllers\Controller;
 
 class PagesController extends Controller {
 
-    public function about()
+    public function home()
     {
         $name = 'Brandi Soucy';
 
-        return view('pages.about')->with('name', $name);
+        return view('pages.home')->with('name', $name);
     }
 }

@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('about', function() {
-    return view('about');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('home', function() {
+    return view('pages.home');
 });
 
 /*
@@ -30,5 +30,5 @@ Route::get('about', function() {
 */
 
 Route::group(['middleware' => ['web']], function () use ($router) {
-    $router->resource('about', 'PagesController');
+    $router->resource('pages.home', 'PagesController');
 });
