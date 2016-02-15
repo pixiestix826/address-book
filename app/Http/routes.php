@@ -16,10 +16,7 @@ Route::get('/', [
     'as' => 'home',
     'uses' => 'PagesController@home'
 ]);
-Route::get('contacts', [
-    'as' => 'contacts',
-    'uses' => 'ContactsController@contacts'
-]);
+
 //additonal route resources
 Route::resource('contacts', 'ContactsController');
 
