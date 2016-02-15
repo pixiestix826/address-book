@@ -24,12 +24,12 @@ class ContactsController extends Controller
 
     // Store contacts
     public function store(Request $request) {
-        $this->vlaidate($request, [
+        $this->validate($request, [
             'name' => 'required',
             'address' => 'required',
             'phone' => 'required'
         ]);
-        $input = $request::all();
+        $input = $request->all();
         Contact::create($input);
         return redirect()->back();
     }
@@ -37,14 +37,14 @@ class ContactsController extends Controller
     // Show specific contacts
     public function show($id)
     {
-        $contact = Contact::findOrFail($id);
+        $contacts = Contact::findOrFail($id);
         return view('contacts.update')->withContact($contact);
     }
 
     // Edit Contact
     public function edit($id)
     {
-        $contact = Contact::findOrFail($id);
+        $contacts = Contact::findOrFail($id);
 
         return view('contacts.edit')->withContact($contact);
     }
@@ -52,7 +52,7 @@ class ContactsController extends Controller
     // Update contact
     public function update($id, Request $request)
     {
-        $contact = Contact::findOrFail($id);
+        $contacts = Contact::findOrFail($id);
 
         $this->validate($request, [
             'name' => 'required',
@@ -68,7 +68,7 @@ class ContactsController extends Controller
 
     // Destroy unwanted contacts
     public function destroy($id) {
-        $contact = Contact::findOrFail($id);
+        $contacts = Contact::findOrFail($id);
 
         $contact->delete();
 

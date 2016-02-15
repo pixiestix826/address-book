@@ -56,6 +56,3 @@ Route::group(['middleware' => ['web']], function () use ($router) {
 Route::group(['middleware' => ['web']], function () use ($router) {
     $router->resource('contacts.update', 'ContactsController');
 });
-Route::group(['middleware' => ['web']], function () use ($router) {
-    $router->resource('templates.main', 'ContactsController');
-});
