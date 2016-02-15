@@ -1,4 +1,4 @@
-@extends('contacts.create')
+@extends('template.main')
 @section('content')
 
 
@@ -21,8 +21,9 @@
     {!! Form::text('phone', null, ['class' => 'input']) !!}
 </div>
 
-{!! Form::submit('Create New Contact', ['class' => 'btn btn-primary']) !!}
-
+{!! Form::submit('Create New Contact', ['class' => 'button']) !!}
 {!! Form::close() !!}
+
+<a href="{{ route('contacts.index') }}" class="button">Back To Address Book</a>
 
 @endsection
