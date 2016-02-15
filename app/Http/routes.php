@@ -10,17 +10,25 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+// Use named routes to generate urls or redirects
+// specify route name for controller actions
+Route::get('/', [
+    'as' => 'home',
+    'uses' => 'PagesController@home'
+]);
+//additonal route resources
+Route::resource('contacts', 'ContactsController');
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('home', function() {
-    return view('pages.home');
-});
-
-Route::get('/', 'WelcomeController@index');
-
-Route::controller('contacts', 'ContactsController');
+// Route::get('home', function() {
+//     return view('pages.home');
+// });
+//
+// Route::get('/', 'WelcomeController@index');
+//
+// Route::controller('contacts', 'ContactsController');
 
 /*
 |--------------------------------------------------------------------------

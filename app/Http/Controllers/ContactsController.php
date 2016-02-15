@@ -34,7 +34,15 @@ class ContactsController extends Controller
         Contact::create($input);
         return redirect()->back();
     }
-    //Show specific contacts
+
+    // Show specific contacts
+    public function show($id)
+    {
+        $contact = Contact::findOrFail($id);
+        return view('contacts.update')->withContact($contact);
+    }
+
+    // Edit Contact
     public function edit($id)
     {
         $contact = Contact::findOrFail($id);
