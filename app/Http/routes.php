@@ -19,6 +19,7 @@ Route::get('home', function() {
 });
 
 Route::get('/', 'WelcomeController@index');
+Route::controller('contacts', 'ContactsController');
 
 /*
 |--------------------------------------------------------------------------
