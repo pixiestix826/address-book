@@ -21,7 +21,7 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 
 I encountered several dependancy issues in my inital set-up, which prohibited view to the controller I created.
 After killing a couple of repos to try to start fresh, I spent a great deal of time researching the issues. I discovered
-Illuminate html was no longer a valid option for Laravel 5 and updated LaravelCollective through composer.
+Illuminate html was no longer a valid option for Laravel 5 and updated to LaravelCollective through composer.
 In hindsight, it would have been more productive to not re-visit the laracasts and move straight to the documentation sooner.
 
 
