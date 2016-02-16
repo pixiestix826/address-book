@@ -17,6 +17,8 @@ Route::get('/', [
     'uses' => 'PagesController@home'
 ]);
 
+Route::get('contacts', 'ContactsController@method');
+
 //additonal route resources
 Route::resource('contacts', 'ContactsController');
 
